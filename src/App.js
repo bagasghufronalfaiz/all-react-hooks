@@ -1,25 +1,17 @@
-import logo from './logo.svg';
 import './App.css';
-
-function App() {
+import StateTutorial from './components/useState/StateTutorial';
+import ReducerTutorial from './components/useReducer/ReducerTutorial';
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+   <div className="App">
+     <h1>All React Hooks Crash Course</h1>
+     <hr width="20%" />
+     {/* <StateTutorial /> */}
+     <hr width="20%" />
+     <ReducerTutorial />
     </div>
   );
 }
 
 export default App;
+
