@@ -1,14 +1,17 @@
 import './App.css';
-import StateTutorial from './components/useState/StateTutorial';
-import ReducerTutorial from './components/useReducer/ReducerTutorial';
+import State from './components/useState/State';
+import Reducer from './components/useReducer/Reducer';
+import Effect from './components/useEffect/Effect';
 const App = () => {
   return (
    <div className="App">
      <h1>All React Hooks Crash Course</h1>
      <hr width="20%" />
-     {/* <StateTutorial /> */}
+     <State />
      <hr width="20%" />
-     <ReducerTutorial />
+     <Reducer />
+     <hr width="20%" />
+     <Effect />
     </div>
   );
 }

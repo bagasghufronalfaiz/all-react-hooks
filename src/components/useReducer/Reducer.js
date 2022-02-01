@@ -19,13 +19,14 @@ function reducer(state, action) {
     }
 }
 
-function ReducerTutorial() {
-    const initialCount =  0;
+const Reducer = () => {
+    const initialCount = 0;
 
     const [state, dispatch] = useReducer(reducer, initialCount, init);
 
     return (
         <div>
+            <h1>useReducer</h1>
             Count: {state.count}
             <button
                 onClick={() =>
@@ -38,6 +39,6 @@ function ReducerTutorial() {
             <button onClick={() => dispatch({ type: "increment" })}>+</button>
         </div>
     );
-}
+};
 
-export default ReducerTutorial;
+export default Reducer;
