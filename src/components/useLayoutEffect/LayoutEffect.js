@@ -14,15 +14,20 @@ const LayoutEffect = () => {
     }, [value]);
 
     useEffect(() => {
-        console.log("useEffect : ", value);
+        console.log("useEffect : ");
     }, []);
 
     console.log("home : ", value);
+
+    const changeit = () => {
+        setValue("lolol")
+    }
 
     return (
         <div>
             <h1>useLayoutEffect</h1>
             <p>{value} is the greatest portal for geeks!</p>
+            <button onClick={changeit}>Change Button</button>
         </div>
     );
 };
