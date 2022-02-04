@@ -5,6 +5,7 @@ import Effect from './components/useEffect/Effect';
 import Ref from './components/useRef/Ref';
 import LayoutEffect from './components/useLayoutEffect/LayoutEffect';
 import ImperativeHandle from './components/useImperativeHandle/ImperativeHandle';
+import Memo from './components/useMemo/Memo';
 
 const App = () => {
   return (
@@ -22,6 +23,8 @@ const App = () => {
      <LayoutEffect />
      <hr width="20%" />
      <ImperativeHandle />
+     <hr width="20%" />
+     <Memo />
     </div>
   );
 }

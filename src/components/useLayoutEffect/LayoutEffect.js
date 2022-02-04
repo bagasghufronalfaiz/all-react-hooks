@@ -5,19 +5,16 @@ const LayoutEffect = () => {
 
     useLayoutEffect(() => {
         if (value === "GFG") {
-            // setTimeout(() => {
-            //     setValue("GeeksForGeeks")
-            // },4000);
             setValue("GeeksForGeeks")
         }
-        console.log("UseLayoutEffect is called with the value of : ", value);
+        // console.log("UseLayoutEffect is called with the value of : ", value);
     }, [value]);
 
     useEffect(() => {
-        console.log("useEffect : ");
+        // console.log("useEffect : ");
     }, []);
 
-    console.log("home : ", value);
+    // console.log("home : ", value);
 
     const changeit = () => {
         setValue("lolol")
