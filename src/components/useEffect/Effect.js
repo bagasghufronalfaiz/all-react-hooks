@@ -14,17 +14,17 @@ const Effect = () => {
                 return response.json();
             })
             .then((data) => {
-                console.log("data : ");
-                console.log(data);
+                // console.log("data : ");
+                // console.log(data);
                 setData(data);
             })
             .catch((error) => {
-                console.error("Error:", error);
+                // console.error("Error:", error);
             });
     }, []);
 
-    console.log('data2 : ');
-    console.log(data);
+    // console.log('data2 : ');
+    // console.log(data);
     return (
         <div>
             <h1>useEffect</h1>
