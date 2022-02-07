@@ -14,8 +14,8 @@ const Memo = () => {
             })
             .then((data) => {
                 setData(data);
-                console.log("data : ");
-                console.log(data);
+                // console.log("data : ");
+                // console.log(data);
             });
     }, []);
 
@@ -30,7 +30,7 @@ const Memo = () => {
             }
         }
 
-        console.log("USE MEMO");
+        // console.log("USE MEMO");
 
         return longestName;
     };
